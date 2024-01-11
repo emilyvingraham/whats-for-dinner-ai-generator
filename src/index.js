@@ -21,7 +21,7 @@ function getRecipe(event) {
     let recipeContainer = document.querySelector('#recipe-container');
     recipeContainer.classList.remove('hidden');
     let recipePending = document.querySelector('#ai-recipe');
-    recipePending.innerHTML = `<span class="blink">Generating...</span>`;
+    recipePending.innerHTML = `<span class="blink">Generating recipe for a ${userInput.value} dinner...</span>`;
 
     console.log('generating poem');
     console.log(`Prompt: ${prompt}`);
