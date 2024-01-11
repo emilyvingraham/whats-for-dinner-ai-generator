@@ -68,9 +68,9 @@ form {
     display: block;
     margin: 0px auto;
     padding-bottom: 10px;
-    opacity: 0.8;
+    opacity: 0.9;
     color: #11235a;
-    font-weight: 900;
+    font-weight: 700;
 }
 .recipe-container {
     border-left: 10px solid #11235a;
@@ -81,6 +81,10 @@ form {
     background-color: #f8f4ec;
     border-radius: 10px;
     max-width: 80%;
+    position: relative;
+    bottom: 8px;
+    color: #11235a;
+    font-weight: 600;
 }
 footer {
     text-align: center;
