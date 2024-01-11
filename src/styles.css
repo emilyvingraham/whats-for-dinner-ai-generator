@@ -86,6 +86,9 @@ form {
     color: #11235a;
     font-weight: 600;
 }
+.hidden {
+    display: none;
+}
 footer {
     text-align: center;
     margin: 10px auto;
