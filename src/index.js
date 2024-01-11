@@ -15,11 +15,13 @@ function getRecipe(event) {
 
     let apiKey = '47ce0ocdabaf4a2e81b031bb9t47a0e0';
     let context = 'Be polite. Follow user instructions:';
-    let prompt = `User instructions: Generate 1 dinner recipe with the main ingredient of ${userInput.value}. Do not introduce yourself. Separate each sentence with <br/>. Separate each section with <br/>. Display the recipe title in <strong> element. Display the recipe ingredients in <strong> element. Display recipe instructions in <strong> element. Sign the recipe with "Generated with ❤️ by SheCodes AI" in a <strong> element`;
+    let prompt = `User instructions: Generate 1 dinner recipe with the main ingredient of ${userInput.value}. Do not introduce yourself. Separate each sentence with <br/>. Separate each section with <br/>. Display the recipe title in <strong> element. Display the recipe ingredients in <strong> element. Display recipe instructions in <strong> element. Sign the recipe with <br/> element as "Generated with ❤️ by SheCodes AI" in a <strong> element`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
     let recipeContainer = document.querySelector('#recipe-container');
     recipeContainer.classList.remove('hidden');
+    let recipePending = document.querySelector('#ai-recipe');
+    recipePending.innerHTML = `<span class="blink">Generating...</span>`;
 
     console.log('generating poem');
     console.log(`Prompt: ${prompt}`);
