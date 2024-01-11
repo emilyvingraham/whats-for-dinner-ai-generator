@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>What's For Dinner?</title>
         <link rel="stylesheet" href="src/styles.css" />
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -18,11 +20,15 @@
         </header>
         <div class="container">
             <div class="user-container">
-                <form>
+                <form id="recipe-form">
                     <input
                         class="recipe-text"
                         type="text"
-                        value="What are you in the mood for?"
+                        placeholder="What are you in the mood for?"
+                        autocomplete="off"
+                        autofocus="off"
+                        required
+                        id="user-instructions"
                     />
                     <input
                         class="recipe-submit"
@@ -34,17 +40,26 @@
             <div class="hint">
                 <small>i.e. Chicken, Pork, Fish, Pasta</small>
             </div>
-            <div class="recipe-container">
-                <div class="ai-recipe">
-                    1 cup Flower<br />2 cups sugar<br />1 chicken breasts<br />1
-                    cup onions
-                </div>
+            <div class="recipe-container" id="recipe-container">
+                <div class="ai-recipe" id="ai-recipe"></div>
             </div>
             <footer>
                 This AI project coded by
-                <a href="https://github.com/emilyvingraham" target="_blank"><strong>Emily Ingraham</strong></a> is
-                <a href="https://github.com/emilyvingraham/whats-for-dinner-ai-generator" target="_blank"><strong>open-sourced on Github</strong></a> and
-                <a href="https://whats-for-dinner-ai-generator.netlify.app/" target="_blank"><strong>hosted on Netlify</strong></a>
+                <a href="https://github.com/emilyvingraham" target="_blank"
+                    ><strong>Emily Ingraham</strong></a
+                >
+                is
+                <a
+                    href="https://github.com/emilyvingraham/whats-for-dinner-ai-generator"
+                    target="_blank"
+                    ><strong>open-sourced on Github</strong></a
+                >
+                and
+                <a
+                    href="https://whats-for-dinner-ai-generator.netlify.app/"
+                    target="_blank"
+                    ><strong>hosted on Netlify</strong></a
+                >
             </footer>
         </div>
         <script src="src/index.js"></script>
