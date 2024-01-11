@@ -1,21 +1,31 @@
 * {
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
+
+body {
+    background-color: #ffecd6;
+}
+
 header {
     text-align: center;
+    color: #11235a;
 }
 .container {
-    border: 1px solid black;
+    border: 1px solid transparent;
     width: 60%;
     display: block;
     margin: 0 auto;
     padding: 10px;
+    background-color: #ded0b6;
+    border-radius: 10px;
 }
 .user-container {
-    border: 1px solid black;
+    border: 1px solid transparent;
     padding: 10px;
     margin: 10px auto;
     display: block;
+    border-radius: 10px;
 }
 form {
     display: flex;
@@ -28,30 +38,56 @@ form {
     padding: 10px;
     margin-right: 20px;
     font-size: 14px;
+    border-radius: 10px;
+    font-weight: 800;
+    color: #11235a;
+    border: 1px solid transparent;
 }
 .recipe-submit {
-    padding: 20px;
+    padding: 10px;
     font-size: 14px;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: #11235a;
+    color: #f8f6f0;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.recipe-submit:hover {
+    transition: solid 150ms ease-in-out;
+    background-color: #3559e0;
 }
 .hint {
     font-style: italic;
     font-size: 14px;
-    padding-top: 10px;
-    padding-left: 30px;
-    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    border: 1px solid transparent;
     width: 40%;
     display: block;
-    margin: 5px auto;
+    margin: 0px auto;
     padding-bottom: 10px;
     opacity: 0.8;
+    color: #11235a;
+    font-weight: 900;
 }
 .recipe-container {
-    border: 1px solid black;
+    border-left: 10px solid #11235a;
     padding: 10px;
-    display: flex;
-    justify-content: left;
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: #f8f4ec;
+    border-radius: 10px;
+    max-width: 80%;
 }
 footer {
     text-align: center;
     margin: 10px auto;
+    font-weight: 500;
+    font-size: 14px;
+}
+a {
+    color: #11235a;
 }
