@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+}
+.container {
+    border: 1px solid black;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+.user-container {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-text {
+    width: 80%;
+    opacity: 0.8;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.recipe-submit {
+    padding: 20px;
+    font-size: 14px;
+}
+.hint {
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 30px;
+    border: 1px solid black;
+    width: 40%;
+    display: block;
+    margin: 5px auto;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+.recipe-container {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+}
+footer {
+    text-align: center;
+    margin: 10px auto;
+}
