@@ -13,7 +13,7 @@ header {
 }
 .container {
     border: 1px solid transparent;
-    width: 60%;
+    width: 40%;
     display: block;
     margin: 0 auto;
     padding: 10px;
@@ -112,4 +112,14 @@ footer {
 }
 a {
     color: #11235a;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 10px;
+    }
 }
